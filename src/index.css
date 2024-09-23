@@ -1,0 +1,157 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --cherryRed: #47b2e4;
+  --offWhite: #FCF6F5;
+  --darkBlue : #37517e;
+}
+/* navbar hide on scroll down */
+.nav-up {
+  top: -80px;
+}
+.navbar{
+ transition: all 0.5s;
+ height: 100px;
+}
+.bgLightGrey {
+  background-color: rgba(40, 58, 90, 0.9);
+}
+.siteLogo>img {
+  max-width: 48px;
+}
+.navMenu li a {
+  padding: 18px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--offWhite);
+}
+.sidebar,
+.overlay {
+position: fixed;
+top: 0;
+bottom: 0;
+}
+.sidebar {
+left: -100%;
+max-width: 300px;
+transition: all ease 0.25s;
+overflow-y: auto;
+z-index: 1032;
+}
+.overlay {
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.20);
+visibility: hidden;
+z-index: 1031;
+}
+.main-navigation.active .sidebar {
+left: 0;
+background-color: rgb(255, 255, 255);
+transition: all 1s;
+}
+.main-navigation.active .overlay {
+visibility: visible;
+}
+
+.footer {
+  box-shadow: 0 3px 40px -2px rgba(228, 228, 228, 0.7);
+  margin-top: 2rem;
+}
+.footer_Contact {
+  font-size: 14px;
+}
+.footer_Contact span .footerIcons {
+  font-size: 24px;
+  color: rgba(71, 178, 228 , 1);
+}
+.footer_Links h4 {
+  color: var(--darkBlue);
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+.footer_Links ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.footer_Links .linkIcons {
+  color: var(--cherryRed);
+  margin-right: 4px;
+  font-size: 12px;
+}
+.footer_Links ul li a {
+  color: var(--darkBlue);
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1;
+}
+.footer_Links .subscribeText {
+  font-size: 14px;
+}
+.subsEmail input , .subsEmail input:focus {
+  font-size: 14px;
+  box-shadow: none;
+}
+.subsEmail .submitSubBtn {
+  background-color: var(--darkBlue);
+  color: var(--offWhite);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 992px) {
+.sidebar {
+  position: relative;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  flex-direction: row;
+  max-width: 100%;
+  transform: none;
+  transition: none;
+  overflow-y: visible;
+  z-index: auto;
+}
+
+}
+.main-heading {
+position: relative;
+z-index: 100;
+}
+@media (max-width: 991.98px) {
+  .navbar-nav {
+  padding-top: 5rem;
+  padding-left: 1.5rem;
+}
+.navMenu li a {
+  color: var(--darkBlue);
+}
+}
+@media (min-width: 1084px) {
+.order-lg-2 svg {
+  display: none;
+}
+}
+
+
+
+
+
+
