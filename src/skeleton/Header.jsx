@@ -1,7 +1,6 @@
 import React , { useRef, useState , useEffect  }  from "react";
 import Images from "../assets/images/Images";
-import { Link } from "react-router-dom";
-import About from "../components/About";
+
 const Header = () => {
     const navRef = useRef(null);
     const overlayRef = useRef(null);
@@ -56,26 +55,28 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <Link to={About} className="nav-link">About
-                </Link>
+                <a className="nav-link" href="#/">
+                  About
+                </a>
+                <Link></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#services">
+                <a className="nav-link" href="#/">
                   Services
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#pricing">
+                <a className="nav-link" href="#/">
                   Pricing
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#clients">
+                <a className="nav-link" href="#/">
                   Clients
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
+                <a className="nav-link" href="#/">
                   Contact
                 </a>
               </li>
