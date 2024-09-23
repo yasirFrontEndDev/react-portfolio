@@ -11,8 +11,8 @@ const HeroSection = () => {
             <h1>Better Solutions For Your Business</h1>
             <p>We are team of talented designers making websites with Bootstrap</p>
             <div className="d-flex">
-              <a href="#about" className="btnGet_started">Get Started</a>
-              <a href="#" className="btnWatch_video d-flex align-items-center">
+              <a href="#/" className="btnGet_started">Get Started</a>
+              <a href="#/" className="btnWatch_video d-flex align-items-center">
               <FontAwesomeIcon className='faPlayIcon' icon={faCirclePlay} />
               <span>Watch Video</span></a>
             </div>
