@@ -1,16 +1,18 @@
 import React from "react";
 import {
-  createHashRouter,
+  createBrowserRouter,
   RouterProvider,
   createRoutesFromElements,
   Route,
+  Navigate,
   Link,
 } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import Portfolio from "./pages/Portfolio";
 
+
 const App = () => {
-  const router = createHashRouter(
+  const router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route />
