@@ -1,6 +1,7 @@
 import React , { useRef, useState , useEffect  }  from "react";
 import Images from "../assets/images/Images";
-
+import { Link } from "react-router-dom";
+import HeroSection from "../components/HeroSection";
 const Header = () => {
     const navRef = useRef(null);
     const overlayRef = useRef(null);
@@ -79,14 +80,19 @@ const Header = () => {
                   Contact
                 </a>
               </li>
+              {/* <li className="nav-item">
+                <Link className="nav-link" to="/redux">Redux</Link>
+              </li> */}
             </ul>
 
             <div className="ms-lg-5 px-3 px-lg-2">
-                <a className="px-4 btnGet_started btnLogin">Login</a>
+                <a className="px-4 btnGet_started btnLogin">Appoinment</a>
             </div>
           </div>
         </div>
       </nav>
+
+      <HeroSection />
     </div>
   );
 }

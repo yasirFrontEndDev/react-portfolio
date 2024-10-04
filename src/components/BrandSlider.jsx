@@ -33,40 +33,47 @@ const BrandSlider = () => {
         ]
       };
   return (
-    <div className="slider-container">
+
+    <section className='about_Section py-5' id='about'>
+        <div className="container sectionTitle">
+            <h2>Our Clients</h2>
+            <div className="slider-container">
     <Slider {...settings}>
-      <div className='bgOffwhiteColorCherry p-3'>
+      <div className='p-3'>
         <div>
-            <img src={Images.client1} className='img-fluid w-25' alt="client" />
+            <img src={Images.client1} className='img-fluid w-75' alt="client" />
         </div>
       </div>
-      <div className='bgOffwhiteColorCherry p-3'>
+      <div className='p-3'>
       <div>
-            <img src={Images.client2} className='img-fluid w-25' alt="client" />
+            <img src={Images.client2} className='img-fluid w-75' alt="client" />
         </div>
       </div>
-      <div className='bgOffwhiteColorCherry p-3'>
+      <div className='p-3'>
       <div>
-            <img src={Images.client3} className='img-fluid w-25' alt="client" />
+            <img src={Images.client3} className='img-fluid w-75' alt="client" />
         </div>
       </div>
-      <div className='bgOffwhiteColorCherry p-3'>
+      <div className='p-3'>
       <div>
-            <img src={Images.client1} className='img-fluid w-25' alt="client" />
+            <img src={Images.client1} className='img-fluid w-75' alt="client" />
         </div>
       </div>
-      <div className='bgOffwhiteColorCherry p-3'>
+      <div className='p-3'>
       <div>
-            <img src={Images.client2} className='img-fluid w-25' alt="client" />
+            <img src={Images.client2} className='img-fluid w-75' alt="client" />
         </div>
       </div>
-      <div className='bgOffwhiteColorCherry p-3'>
+      <div className='p-3'>
       <div>
-            <img src={Images.client3} className='img-fluid w-25' alt="client" />
+            <img src={Images.client3} className='img-fluid w-75' alt="client" />
         </div>
       </div>
     </Slider>
   </div>
+</div>
+</section>
+   
   )
 }
 

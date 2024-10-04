@@ -63,7 +63,7 @@ const Testimonials = () => {
         <section className='py-5' id='clients'>
             <div className="container sectionTitle">
                 <h2>Client's Testimonials</h2>
-                <p className='text-dark fw-light'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p className='text-dark fw-light'>What Client Saying About Us</p>
             </div>
 
             <div className="container allTests">

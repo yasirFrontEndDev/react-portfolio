@@ -5,9 +5,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --cherryRed: #47b2e4;
+  --cherryRed: #911a1a;
   --offWhite: #fcf6f5;
-  --darkBlue: #37517e;
+  --darkBlue: #16233b;
 }
 h1 {
   color: var(--offWhite);
@@ -116,7 +116,7 @@ p {
   margin-right: 10px;
   font-size: 20px;
 }
-.about_Content .read_More {
+.service_Item .read_More {
   color: var(--cherryRed);
   font-weight: 500;
   font-size: 16px;
@@ -128,6 +128,12 @@ p {
   align-items: center;
   justify-content: center;
   border: 2px solid var(--cherryRed);
+}
+.aboutServicesBoth .icon {
+  display: inline-block;
+  background-color: #c9dcff;
+  padding: 15px 20px;
+  border-radius: 4px;
 }
 .about_Content .read_More:hover {
   background-color: var(--cherryRed);
@@ -141,11 +147,9 @@ p {
 }
 
 .services_Section {
-  background-color: var(--offWhite);
   padding: 60px 0;
 }
 .cardsServices .service_Item {
-  background-color: #ffffff;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
@@ -238,6 +242,19 @@ p {
 .selectedPlanBtn {
   background-color: var(--cherryRed);
   color: var(--offWhite);
+}
+.teamCard {
+  width: 20rem;
+}
+.teamImg {
+  display: flex;
+  justify-content: center;
+}
+.teamImg img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: top;
 }
 .testsBox {
   margin: 0 10px;

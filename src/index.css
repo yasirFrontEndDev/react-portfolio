@@ -10,7 +10,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --cherryRed: #47b2e4;
+  --cherryRed: #911a1a;
   --offWhite: #FCF6F5;
   --darkBlue : #37517e;
 }
@@ -23,15 +23,15 @@
  height: 100px;
 }
 .bgLightGrey {
-  background-color: rgba(40, 58, 90, 0.9);
+  background-color: #16233b;
 }
 .siteLogo>img {
   max-width: 48px;
 }
 .navMenu li a {
   padding: 18px 15px;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   color: var(--offWhite);
 }
 .sidebar,
@@ -74,7 +74,7 @@ visibility: visible;
 }
 .footer_Contact span .footerIcons {
   font-size: 24px;
-  color: rgba(71, 178, 228 , 1);
+  color: var(--cherryRed);
 }
 .footer_Links h4 {
   color: var(--darkBlue);
