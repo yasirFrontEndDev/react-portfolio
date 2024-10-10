@@ -1,34 +1,36 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWaveSquare , faArrowRightLong} from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWaveSquare, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+
 const Services = () => {
     const servicesArray = [
         {
             icon: faWaveSquare,
             title: 'Web App Development',
-            description: 'We create scalable, secure, high-end performing web applications that drive your business forward.',
+            description: 'We build robust, scalable, and fast web applications using the latest technologies like Node.js, Python, PHP, and data science to meet your business needs.',
         },
         {
             icon: faWaveSquare,
-            title: 'Wordpress/Shopify Development',
-            description: 'From iOS to Android, build an innovative app that creates a seamless user experience & meets today’s mobile-first-world.',
+            title: 'WordPress / Shopify Development',
+            description: 'Expert WordPress and Shopify development services to create responsive, SEO-friendly, and high-converting websites and online stores.',
         },
         {
             icon: faWaveSquare,
-            title: 'UI / UX Design ',
-            description: 'From wireframes to mockups, we create captivating designs that engage your audience and drive results.',
+            title: 'UI / UX Design',
+            description: 'Crafting intuitive, user-centered interfaces with modern UI/UX design principles to enhance customer experience and drive engagement.',
         },
         {
             icon: faWaveSquare,
-            title: 'Digital Marketing ',
-            description: 'Dot Networks is the best digital marketing agency to offer a 360 degree digital services portfolio. We have a focused approach to drive traffic and sales through our digital marketing services.',
+            title: 'Digital Marketing',
+            description: 'Full-service digital marketing, including SEO, PPC, content marketing, and social media strategies, designed to maximize online visibility and drive growth.',
         },
     ];
+
     return (
         <section className='services_Section' id='services'>
             <div className="container sectionTitle">
-                <h2>Services</h2>
-                <p className='text-dark fw-light'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <h2>Our Services</h2>
+                <p className='text-dark fw-light'>Empowering businesses with tailored digital solutions for a competitive edge.</p>
             </div>
             <div className="container cardsServices">
                 <div className="row gy-4">
@@ -51,7 +53,7 @@ const Services = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Services
+export default Services;

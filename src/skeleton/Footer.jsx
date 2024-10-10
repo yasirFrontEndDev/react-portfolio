@@ -7,16 +7,16 @@ const Footer = () => {
       <div className="container footer_Top">
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6 footerAbout">
-            <a href="#/"><h2>Dot Networks</h2></a>
+            <a href="#/"><h2>Woltrio</h2></a>
             <div className="footer_Contact pt-2">
               <p className='text-dark fw-light'> Lorem ipsum <br />Pu, Pak 46000 </p>
               <span className='mb-1 d-block'>
                 <FontAwesomeIcon className='me-2 footerIcons' icon={faPhoneVolume} />
-                <span className=''>+92 312 6858503</span>
+                <span className=''>+92 333 3333333</span>
               </span>
               <span className='mb-1 d-block'>
                 <FontAwesomeIcon className='me-2 footerIcons' icon={faEnvelope} />
-                <span className=''>infodummy@example.com</span>
+                <span className=''>sales@aLTRION.com</span>
               </span>
             </div>
           </div>
@@ -32,10 +32,10 @@ const Footer = () => {
           <div className="col-lg-2 col-md-3 footer_Links">
             <h4>Our Services</h4>
             <ul className='list-group'>
-              <li><FontAwesomeIcon className='linkIcons' icon={faChevronRight} /> <a href="#/">Web Design</a></li>
-              <li><FontAwesomeIcon className='linkIcons' icon={faChevronRight} /> <a href="#/">Web Development</a></li>
-              <li><FontAwesomeIcon className='linkIcons' icon={faChevronRight} /> <a href="#/">Product Management</a></li>
-              <li><FontAwesomeIcon className='linkIcons' icon={faChevronRight} /> <a href="#/">Marketing</a></li>
+              <li><FontAwesomeIcon className='linkIcons' icon={faChevronRight} /> <a href="#/">Wordpress Shopify</a></li>
+              <li><FontAwesomeIcon className='linkIcons' icon={faChevronRight} /> <a href="#/">Web App Development</a></li>
+              <li><FontAwesomeIcon className='linkIcons' icon={faChevronRight} /> <a href="#/">UI/UX Design</a></li>
+              <li><FontAwesomeIcon className='linkIcons' icon={faChevronRight} /> <a href="#/">Digital Marketing</a></li>
             </ul>
           </div>
           <div className="col-lg-4 col-md-12 footer_Links">

@@ -3,12 +3,14 @@ import {
   createHashRouter,
   RouterProvider,
   createRoutesFromElements,
+  createBrowserRouter,
   Route,
   Link,
 } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import Portfolio from "./pages/Portfolio";
-import ReduxTool from "./pages/ReduxTool";
+import AllServices from "./pages/AllServices";
+import Contact from "./pages/Contact";
 //switching from BrowserRouter to HashRouter, as GitHub Pages does not support client-side routing without special configuration.
 const App = () => {
   const router = createHashRouter(
@@ -17,7 +19,8 @@ const App = () => {
         <Route />
           <Route path="/" element={<MainLayout />}>
           <Route index element={<Portfolio />} />
-          <Route path="/redux" element={<ReduxTool />}/>
+          <Route path="/services" element={<AllServices />}/>
+          <Route path="/contact" element={<Contact/>}/>
         </Route>
       </>
     )

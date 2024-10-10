@@ -8,17 +8,21 @@ const HeroSection = () => {
         <div className="container">
         <div className="row gy-4">
           <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>Better Solutions For Your Business</h1>
-            {/* <p>We are team of talented developers making app development with Bootstrap</p> */}
+            <h1>Transforming Ideas into Digital Success</h1>
             <div className="d-flex">
               <a href="#/" className="btnGet_started">View More Details</a>
-              <a href="#/" className="btnWatch_video d-flex align-items-center">
-              <FontAwesomeIcon className='faPlayIcon' icon={faCirclePlay} />
-              <span>Watch Video</span></a>
             </div>
           </div>
           <div className="col-lg-6 order-1 order-lg-2" >
             <img src={Images.image1} className="img-fluid animated" alt=""/>
+          </div>
+        </div>
+        <div className="boxDesign">
+          <div className="boxDesign_Inner py-2 px-2">
+              <span>WEB DEVELOPMENT </span>
+              <span>UI/UX DESIGN</span>
+              <span>WORDPRESS / SHOPIFY</span>
+              <span>DIGITAL MARKETING</span>
           </div>
         </div>
       </div>

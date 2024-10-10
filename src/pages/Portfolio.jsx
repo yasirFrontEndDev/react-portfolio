@@ -5,16 +5,17 @@ import Services from '../components/Services'
 import Pricing from '../components/Pricing'
 import Testimonials from '../components/Testimonials'
 import Team from '../components/Team'
+import Articles from '../components/Articles'
 const Portfolio = () => {
   return (
     <div>
        
-        <About />
         <Services />
-        <Pricing />
-        <Team/>
+        <About />
         <BrandSlider />
+        <Team/>
         <Testimonials />
+        <Articles />
     </div>
   )
 }

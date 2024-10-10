@@ -1,92 +1,83 @@
-import React , { useRef, useState , useEffect  }  from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Images from "../assets/images/Images";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse,faNewspaper,faTableCellsLarge } from '@fortawesome/free-solid-svg-icons'
+import TopBar from "./TopBar";
 const Header = () => {
-    const navRef = useRef(null);
-    const overlayRef = useRef(null);
-    const [isNavOpen, setIsNavOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
-    const openSideNav = () => {
-      setIsNavOpen(true);      
+  const navRef = useRef(null);
+  const overlayRef = useRef(null);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const openSideNav = () => {
+    setIsNavOpen(true);
+  };
+
+  const closeSideNav = () => {
+    setIsNavOpen(false);
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 60) {
+        setIsScrolled(true); // Add bgLightGrey class when scrolled down
+      } else {
+        setIsScrolled(false); // Remove bgLightGrey class when at the top
+      }
     };
-  
-    const closeSideNav = () => {
-      setIsNavOpen(false);
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY > 60) {
-          setIsScrolled(true); // Add bgLightGrey class when scrolled down
-        } else {
-          setIsScrolled(false); // Remove bgLightGrey class when at the top
-        }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      // Cleanup listener on component unmount
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
+  }, []);
   return (
     <div>
+      <TopBar/>
       <nav
         className={`navbar navbar-expand-lg fixed-top navbar-dark main-navigation ${isNavOpen ? "active" : ""} ${isScrolled ? "bgLightGrey" : ""}`} ref={navRef}
         id="navbar"
       >
         <div className="container-fluid container-xl">
-          <a className="navbar-brand siteLogo" href="#">
-          <img src={Images.logoT} className="img-fluid rounded-2" alt=""/>
+          <a className="navbar-brand siteLogo" href="#/">
+            <img src={Images.logoT} className="img-fluid rounded-2" alt="" />
           </a>
           <button className="navbar-toggler" onClick={openSideNav} type="button">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className={`overlay d-flex d-lg-none ${isNavOpen ? "visible" : ""}`} onClick={closeSideNav} ref={overlayRef}></div>
-          <div className="order-lg-2 d-lg-flex w-100 sidebar pb-3 pb-lg-0 align-items-center">
-            <ul className="navbar-nav navMenu ms-lg-auto  mb-2 mb-lg-0">
+          <div className="d-lg-flex w-100 sidebar pb-3 pb-lg-0 align-items-center">
+            <ul className="navbar-nav navMenu mx-lg-auto  mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  aria-current="page"
-                  href="#"
+                <NavLink
+                  className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                  to="/"
                 >
-                  Home
-                </a>
+                <FontAwesomeIcon className="text-white" icon={faHouse} />  Home
+                </NavLink>
+              </li>
+              <li className="nav-item d-none">
+              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/About">
+                <FontAwesomeIcon className="text-white" icon={faHouse} />About
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#/">
-                  About
-                </a>
+                <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/Services">
+                <FontAwesomeIcon className="text-white" icon={faTableCellsLarge} />Services
+                </NavLink>
               </li>
+            
               <li className="nav-item">
-                <a className="nav-link" href="#/">
-                  Services
-                </a>
+              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/contact">
+                <FontAwesomeIcon className="text-white" icon={faNewspaper} />Contact Us
+                </NavLink>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#/">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#/">
-                  Clients
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#/">
-                  Contact
-                </a>
-              </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link" to="/redux">Redux</Link>
-              </li> */}
             </ul>
 
-            <div className="ms-lg-5 px-3 px-lg-2">
-                <a className="px-4 btnGet_started btnLogin">Appoinment</a>
+            <div className="px-3 px-lg-2 d-none">
+              <Link to="/contact" className="px-4 btnGet_started btnLogin">Contact Us</Link>
             </div>
           </div>
         </div>
