@@ -169,9 +169,15 @@
   /* .navMenu li a {
     color: var(--darkBlue) !important;
   } */
+
 }
 @media (min-width: 1084px) {
   .order-lg-2 svg {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    height: 60px;
   }
 }
