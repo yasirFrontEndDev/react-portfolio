@@ -41,11 +41,15 @@ const Header = () => {
         id="navbar"
       >
         <div className="container-fluid container-xl">
-          <a className="navbar-brand siteLogo d-none d-md-block" href="#/">
+          <a className="navbar-brand siteLogo" href="#/">
             <img src={Images.logoT} className="img-fluid rounded-2" alt="" />
           </a>
-          <div className="d-inline-flex align-items-center mx-auto">
-            <ul className="navbar-nav navMenu flex-row mx-lg-auto  mb-2 mb-lg-0">
+          <button className="navbar-toggler" onClick={openSideNav} type="button">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className={`overlay d-flex d-lg-none ${isNavOpen ? "visible" : ""}`} onClick={closeSideNav} ref={overlayRef}></div>
+          <div className="d-lg-flex w-100 sidebar pb-3 pb-lg-0 align-items-center">
+            <ul className="navbar-nav navMenu mx-lg-auto  mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink
                   className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
