@@ -16,7 +16,7 @@ const Footer = () => {
               </span>
               <span className='mb-1 d-block'>
                 <FontAwesomeIcon className='me-2 footerIcons' icon={faEnvelope} />
-                <span className=''>sales@aLTRION.com</span>
+                <span className=''>sales@wOLTRIO.com</span>
               </span>
             </div>
           </div>

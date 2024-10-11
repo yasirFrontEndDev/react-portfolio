@@ -1,8 +1,8 @@
 import React from 'react'
 
 const Images = {
-    logo : new URL('./site-logo.jpg', import.meta.url).href,
-    logoT : new URL('./logo-transparent.png', import.meta.url).href,
+    logo : new URL('./site-logo.jpeg', import.meta.url).href,
+    logoT : new URL('./site-logo-transparentN.png', import.meta.url).href,
     image1 : new URL('./index/hero-img.png', import.meta.url).href,
     client1 : new URL('./clients/client-1.png', import.meta.url).href,
     client2 : new URL('./clients/client-2.png', import.meta.url).href,

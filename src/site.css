@@ -42,7 +42,7 @@ a {
   padding: 120px 0 60px 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   filter: contrast(1.5);
-  background: radial-gradient(100% 100% at 49.99% 0%,#00000000 0%, #0a0a0a 100%), radial-gradient(87.4% 84.04% at 6.82% 16.24%, #a28888 0%, #00000000 100%), radial-gradient(217.89% 126.62% at 48.04% 0%, #924205 0%, #00000000 100%);
+  background: radial-gradient(100% 100% at 49.99% 0%,#00000000 0%, #0a0a0a 100%), radial-gradient(87.4% 84.04% at 6.82% 16.24%, #6579b6 0%, #00000000 100%), radial-gradient(217.89% 126.62% at 48.04% 0%, #414c6c 0%, #00000000 100%);
 }
 .btnGet_started {
   color: var(--offWhite);
