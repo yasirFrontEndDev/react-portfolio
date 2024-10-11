@@ -515,3 +515,8 @@ a {
     width:50% !important;
   }
 }
+@media (max-width: 768px) {
+  .services_Navpills > button {
+    width: 100%;
+  }
+}
